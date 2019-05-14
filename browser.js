@@ -14,7 +14,7 @@ module.exports = async hosts => {
 			const image = new Image();
 			image.addEventListener('load', () => resolve(true));
 			image.addEventListener('error', () => resolve(false));
-			image.src = `${protocol}//${hostname}${port}/favicon.ico?${Date.now()}`;
+			image.src = `${protocol}//${hostname}${port}/static/favicon.png?${Date.now()}`;
 		});
 	}));
 };
